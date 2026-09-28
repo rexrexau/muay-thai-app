@@ -39,8 +39,8 @@ jobs:
           echo "### client folder files"
           ls -la client || true
 
-      - name: Install dependencies (npm ci)
-        run: npm ci
+      - name: Install dependencies (npm install)
+        run: npm install
 
       - name: TypeScript check
         run: npm run check
